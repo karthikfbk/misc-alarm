@@ -12,5 +12,8 @@
     <string name="Add_Event_Event_Details">Enter details of the Event</string>
     <string name="Add_Event_add_event">Submit</string>
     <string name="Navigate_Home">navigate_home</string>
+    <string name="Home_Search">Search</string>
+    <string name="Home_Overflow">More</string>
+    <string name="Home_More_Settings">Settings</string>
 
 </resources>

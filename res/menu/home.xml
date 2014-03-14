@@ -1,8 +1,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
+   <item android:id="@+id/search_event"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/Home_Search"
+          android:showAsAction="ifRoom|collapseActionView"  
+          android:actionViewClass="SearchView"/>
    <item android:id="@+id/add_event"
-          android:icon="@drawable/ic_action_new"
-          android:title="@string/Home_Add_Event"
-          android:showAsAction="always"  />
+       android:icon="@drawable/ic_action_new_label"
+       android:title="@string/Home_Add_Event"
+       android:showAsAction="ifRoom" />
+   <item android:id="@+id/home_more"
+          android:icon="@drawable/ic_action_overflow"
+          android:title="@string/Home_Overflow"
+          android:showAsAction="always">
+   		<menu>
+        	<item
+            android:id="@+id/More_Setting"
+            android:icon="@drawable/ic_action_settings"
+            android:title="@string/Home_More_Settings"/>
+    	</menu>
+   </item>
 
 </menu>

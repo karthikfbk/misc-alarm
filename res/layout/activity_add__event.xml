@@ -19,28 +19,29 @@
         android:ems="10"
         android:hint="@string/Add_Event_Event_Title" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eventDetails"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:onClick="sendEvent"
+        android:text="@string/Add_Event_add_event" />
+
     <EditText
         android:id="@+id/eventDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
         android:layout_alignLeft="@+id/eventTitle"
-        android:layout_below="@+id/eventTitle"
-        android:layout_marginTop="68dp"
+        android:layout_alignRight="@+id/eventTitle"
+        android:layout_marginBottom="81dp"
         android:ems="10"
         android:hint="@string/Add_Event_Event_Details"
         android:inputType="textPostalAddress" >
 
         <requestFocus />
     </EditText>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/eventDetails"
-        android:layout_below="@+id/eventDetails"
-        android:layout_marginTop="82dp"
-        android:onClick="sendEvent"
-        android:text="@string/Add_Event_add_event" />
 
 </RelativeLayout>
